@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/productstyle.css">
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/comparisonstyle.css" rel="stylesheet" />
 </head>
 
 <!--classic-menu-->
@@ -1029,10 +1030,24 @@
                     <div class="container">
                         <div class="row align-items-center h-100 dsn-z-index-2">
                             <div class="col-lg-6  dsn-z-index-2">
-                                <div class="box-im" data-dsn-grid="move-up">
-                                    <img class="has-top-bottom" src="assets/img/project/project1/1.jpg" alt=""
-                                        data-dsn-move="20%">
+                                <!-- <div class="box-im" data-dsn-grid="move-up"> -->
+                                <!-- <img class="has-top-bottom" src="assets/img/project/project1/1.jpg" alt=""
+                                        data-dsn-move="20%"> -->
+
+                                <div class="wrapper-comp">
+                                    <div class="images">
+                                        <div class="img-1"></div>
+                                        <div class="img-2"></div>
+                                    </div>
+                                    <div class="slider-comp">
+                                        <div class="drag-line">
+                                            <span></span>
+                                        </div>
+                                        <input type="range" min="0" max="100" value="50">
+                                    </div>
                                 </div>
+
+                                <!-- </div> -->
                             </div>
 
                             <div class="col-lg-6">
@@ -1075,6 +1090,27 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="embed-3d-dimensions w-100 h-100-v">
+                    <div class="p-relative h-100">
+                        <div class="overlay-3d-dimensions p-absolute w-100 h-100" data-overlay="3">
+                            <div class="button-action v-middle">
+                                <div class="action-key p-absolute key-on" data-dsn="parallax">
+                                    <i class="fas fa-play-circle"></i>
+                                </div>
+                                <div class="action-key p-absolute key-off " data-dsn="parallax">
+                                    <i class="fas fa-window-close"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <iframe class="w-100 h-100" allow="vr,gyroscope,accelerometer,fullscreen"
+                            src="https://kuula.co/share/7RV8c?fs=1&vr=0&thumbs=1&info=1&logo=1">
+
+                        </iframe>
+                    </div>
+                </div>
+
 
                 <section class="testimonials-2 testimonials-3 testimonials-new section-margin">
 
@@ -1659,6 +1695,16 @@
     <script src="assets/js/dsn-grid.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/product.js"></script>
+    <script>
+        const sliderComp = document.querySelector(".slider-comp input");
+        const img = document.querySelector(".images .img-2");
+        const dragLine = document.querySelector(".slider-comp .drag-line");
+        sliderComp.oninput = () => {
+            let sliderVal = sliderComp.value;
+            dragLine.style.left = sliderVal + "%";
+            img.style.width = sliderVal + "%";
+        }
+    </script>
 </body>
 
 </html>
