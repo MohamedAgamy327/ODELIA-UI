@@ -20,7 +20,7 @@
   justify-content: center;
 }
 .sneaker img {
-  width: 15rem;
+  width: 18rem;
   z-index: 2;
   transition: all 0.75s ease-out;
 }
@@ -52,6 +52,7 @@
   display: flex;
   justify-content: space-between;
   transition: all 0.75s ease-out;
+  empty-cells: hide;
 }
 .sizes button {
   padding: 0.5rem 2rem;
