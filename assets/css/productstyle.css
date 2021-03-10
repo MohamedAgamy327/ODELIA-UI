@@ -14,16 +14,23 @@
   transition: all 0.75s ease-out;
 }
 .circle {
-  width: 12.5rem;
-  height: 12.5rem;
-  background: linear-gradient(
-    to right,
-    rgba(245, 70, 66, 0.75),
-    rgba(8, 83, 156, 0.75)
-  );
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/4002.png");
   position: absolute;
   border-radius: 50%;
   z-index: 1;
+  margin-top: 50px;
+}
+
+.circle2 {
+  width: 150px;
+  height: 150px;
+  background-image: url("../img/4001.jpg");
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+  margin-top: 50px;
 }
 
 .info h4 {
