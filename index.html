@@ -87,7 +87,7 @@
 
 
                     <li class="dsn-drop-down">
-                        <a href="#" class="user-no-selection">
+                        <a href="#about" class="user-no-selection">
                             <span class="dsn-title-menu">About</span>
                             <span class="dsn-meta-menu">02</span>
                             <span class="dsn-bg-arrow"></span>
@@ -533,7 +533,8 @@
             </div>
 
             <div class="wrapper">
-                <section class="intro-about  section-margin have-dsn-animate-number" data-dsn-animate="section">
+                <section id="about" class="intro-about  section-margin have-dsn-animate-number"
+                    data-dsn-animate="section">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-6">
@@ -656,8 +657,8 @@
                             <div onmouseover="movement('container1')"
                                 class="container1 col-md-4 col-sm-6 service-content dsn-up">
                                 <div class="card services-item p-relative text-center background-section no-shadow">
-                                    <div class="bg-section background-section p-absolute w-100 h-100 over-hidden"></div>
-                                    <div class="sneaker box-content p-relative d-flex align-items-start h-100">
+                                    <!-- <div class="bg-section background-section p-absolute w-100 h-100 over-hidden"></div> -->
+                                    <div class="sneaker  p-relative d-flex align-items-start h-100">
                                         <div class="circle">
 
                                         </div>
@@ -679,9 +680,24 @@
                                                 <button class="active">42</button>
                                                 <button>44</button>
                                             </div>
-                                            <div style="visibility: hidden;" class="purchase">
-                                                <button>Purchase</button>
+                                            <div
+                                                class="purchase link-custom effect-ajax d-flex a-item-center p-relative">
+                                                <button>Add To Cart</button>
                                             </div>
+
+
+                                            <!-- <div style="margin-top: -2rem;"
+                                                class="dsn-button-link mt-30 user-no-selection">
+                                                <a href="project1.html"
+                                                    class="link-custom effect-ajax d-flex a-item-center p-relative"
+                                                    data-dsn-ajax="slider">
+                                                    <span class="link-text">Learn More</span>
+                                                    <span class="link-circle p-absolute">
+                                                        <i class="fas fa-arrow-right"></i>
+                                                    </span>
+                                                </a>
+                                            </div> -->
+
                                         </div>
                                     </div>
                                 </div>
@@ -1105,7 +1121,7 @@
                             </div>
                         </div>
                         <iframe class="w-100 h-100" allow="vr,gyroscope,accelerometer,fullscreen"
-                            src="https://kuula.co/share/7RV8c?fs=1&vr=0&autorotate=0.32&thumbs=1&info=1&logo=1">
+                            src="https://kuula.co/share/7W4FK?fs=1&vr=0&autorotate=0.32&thumbs=1&info=1&logo=1">
 
                         </iframe>
                     </div>
@@ -1729,6 +1745,7 @@
             img.style.width = sliderVal + "%";
         }
     </script>
+
 </body>
 
 </html>

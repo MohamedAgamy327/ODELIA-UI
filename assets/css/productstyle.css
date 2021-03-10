@@ -62,13 +62,13 @@ button.active {
   color: white;
 }
 .purchase {
-  margin-top: 5rem;
+  margin-top: -2rem;
   transition: all 0.75s ease-out;
 }
 .purchase button {
   width: 100%;
-  padding: 1rem 0rem;
-  background: #f54642;
+  padding: 0.7rem 0rem;
+  background: #2a5822;
   border: none;
   color: white;
   cursor: pointer;
