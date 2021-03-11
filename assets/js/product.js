@@ -10,7 +10,7 @@ function movement(x) {
   const description = document.querySelector("." + x + " .info p");
 
 
-  if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     container.addEventListener("pointerenter", (e) => {
       card.style.transition = "none";
       //Popout
