@@ -21,38 +21,3 @@
 .info p {
   transition: all 0.75s ease-out;
 }
-
-.sizes {
-  display: flex;
-  justify-content: space-between;
-  transition: all 0.75s ease-out;
-  empty-cells: hide;
-}
-.sizes button {
-  padding: 0.5rem 2rem;
-  background: none;
-  border: none;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  color: #585858;
-}
-button.active {
-  background: #585858;
-  color: white;
-}
-.purchase {
-  margin-top: -2rem;
-  transition: all 0.75s ease-out;
-}
-.purchase button {
-  width: 100%;
-  padding: 0.7rem 0rem;
-  background: #2a5822;
-  border: none;
-  color: white;
-  cursor: pointer;
-  border-radius: 30px;
-  font-weight: bolder;
-}
