@@ -9,68 +9,9 @@
   justify-content: center;
 }
 .sneaker img {
-  width: 18rem;
+  width: 15rem;
   z-index: 2;
   transition: all 0.75s ease-out;
-}
-.circle1 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/face-wash-best-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
-}
-
-.circle2 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/Hair-perfume-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
-}
-
-.circle3 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/MINT-toner-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
-}
-
-.circle4 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/morocan-soap-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
-}
-
-.circle5 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/Shower-gel-lemon-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
-}
-
-.circle6 {
-  width: 150px;
-  height: 150px;
-  background-image: url("../img/bestselling/Shower-gel-orange-2.png");
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-  margin-top: 50px;
 }
 
 .info h4 {
