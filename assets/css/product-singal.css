@@ -74,26 +74,25 @@
   margin: 0;
 }
 
-fieldset {
-  overflow: hidden;
+.hungry .selection label {
+  display: inline-block;
+  width: 2em;
+  border-radius: 6px;
+  color: #ffffff;
+  padding: 0.5em;
+  cursor: pointer;
+  border-style: initial;
+  border-color: #ccc;
 }
 
-.some-class {
-  float: left;
-  clear: none;
+.hungry .selection label:hover {
+  background-color: rgba(255, 255, 255, 0.69);
 }
 
-label {
-  float: left;
-  clear: none;
-  display: block;
-  padding: 0px 1em 0px 8px;
-  color: rgba(255, 255, 255, 0.69);
+.hungry .selection input[type="radio"] {
+  display: none;
 }
 
-input[type="radio"],
-input.radio {
-  float: left;
-  clear: none;
-  margin: 2px 0 0 2px;
+.hungry .selection input[type="radio"]:checked ~ label {
+  background-color: #2a5822;
 }
