@@ -24,7 +24,6 @@
 
   @include media_575 {
     padding: 22px 15px;
-
   }
 
   .menu-cover-title {
@@ -37,7 +36,7 @@
     transform: translateY(-50%);
     opacity: 0.05;
   }
-  
+
   .inner-header .main-logo {
     width: 96px;
     pointer-events: all;
@@ -50,29 +49,23 @@
       display: none;
     }
 
-
-    // @include v-light {
-    //   .dark-logo {
-    //     display: block;
-    //   }
-    //   .light-logo {
-    //     display: none;
-    //   }
-    // }
-
+    @include v-light {
+      .dark-logo {
+        display: block;
+      }
+      .light-logo {
+        display: none;
+      }
+    }
   }
 
-  .main-navigation{
+  .main-navigation {
     pointer-events: all;
   }
 
-
   @import "menu/hamburger";
-
 
   .classic-menu & {
     @import "menu/classic";
   }
-
-
 }
