@@ -21,3 +21,18 @@
 .info p {
   transition: all 0.75s ease-out;
 }
+
+
+body:not(.v-light) .dark-show {
+  display: inherit;
+}
+body:not(.v-light) .light-show {
+  display: none;
+}
+
+body.v-light .dark-show {
+  display: none;
+}
+body.v-light .light-show {
+  display: inherit;
+}
