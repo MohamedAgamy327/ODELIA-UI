@@ -1,92 +1,106 @@
 .wrapper-comp {
-  position: relative;
-  height: 730px;
-  width: 500px;
-  overflow: hidden;
-  background: #fff;
+    position: relative;
+    height: 730px;
+    width: 500px;
+    overflow: hidden;
+    background: #fff;
 }
+
 .wrapper-comp .images {
-  height: 100%;
-  width: 100%;
-  display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
+
 .wrapper-comp .images .img-1 {
-  height: 100%;
-  width: 100%;
-  background: url("https://odelia.s3.amazonaws.com/img/vs/1.jpg") no-repeat;
+    height: 100%;
+    width: 100%;
+    background: url("/assets/img/vs/1.jpg") no-repeat;
 }
+
 .wrapper-comp .images .img-2 {
-  position: absolute;
-  height: 100%;
-  width: 50%;
-  /* filter: blur(5px); */
-  background: url("https://odelia.s3.amazonaws.com/img/vs/2.jpg") no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    /* filter: blur(5px); */
+    background: url("/assets/img/vs/2.jpg") no-repeat;
 }
+
 .wrapper-comp .slider-comp {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 99;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 99;
 }
+
 .wrapper-comp .slider-comp input {
-  width: 100%;
-  outline: none;
-  background: none;
-  -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    -webkit-appearance: none;
 }
+
 .slider-comp input::-webkit-slider-thumb {
-  height: 730px;
-  width: 3px;
-  background: none;
-  -webkit-appearance: none;
-  cursor: col-resize;
+    height: 730px;
+    width: 3px;
+    background: none;
+    -webkit-appearance: none;
+    cursor: col-resize;
 }
+
 .slider-comp .drag-line {
-  width: 3px;
-  height: 730px;
-  position: absolute;
-  left: 49.85%;
-  pointer-events: none;
+    width: 3px;
+    height: 730px;
+    position: absolute;
+    left: 49.85%;
+    pointer-events: none;
 }
+
 .slider-comp .drag-line::before,
 .slider-comp .drag-line::after {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 730px;
-  background: #fff;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 730px;
+    background: #fff;
 }
+
 .slider-comp .drag-line::before {
-  top: 0;
+    top: 0;
 }
+
 .slider-comp .drag-line::after {
-  bottom: 0;
+    bottom: 0;
 }
+
 .slider-comp .drag-line span {
-  height: 42px;
-  width: 42px;
-  border: 3px solid #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
+    height: 42px;
+    width: 42px;
+    border: 3px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .slider-comp .drag-line span::before,
 .slider-comp .drag-line span::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  border: 10px solid transparent;
-  border-bottom-width: 0px;
-  border-right-width: 0px;
-  transform: translate(-50%, -50%) rotate(45deg);
+    position: absolute;
+    content: "";
+    top: 50%;
+    border: 10px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .slider-comp .drag-line span::before {
-  left: 40%;
-  border-left-color: #fff;
+    left: 40%;
+    border-left-color: #fff;
 }
+
 .slider-comp .drag-line span::after {
-  left: 60%;
-  border-top-color: #fff;
+    left: 60%;
+    border-top-color: #fff;
 }
